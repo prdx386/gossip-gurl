@@ -1,0 +1,18 @@
+# Packaged skill files are build artefacts; the release workflow attaches them to releases
+*.skill
+build/
+
+# Never commit personal data (profile folder contents, if someone copies it in here)
+profile/
+outcomes.jsonl
+notes.md
+postings/
+cases/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

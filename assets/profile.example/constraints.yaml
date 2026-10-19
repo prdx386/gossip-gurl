@@ -1,0 +1,46 @@
+# Copy this folder outside the skill, fill it in, and point the skill at it.
+# This file is read at the start of every run (mail configuration, formal hurdles).
+# cv.md, projects.yaml, certs.yaml and voice.md are read only for a match or a reply draft.
+
+legal_form: "GmbH, sole shareholder-managing director"   # or "freelancer", "employee of consultancy"
+roles_offered:                           # the seats you apply from; the skill picks one lens per posting.
+  - "auditor"                            # independent assessments, §8a / ISO 27001 audits
+  - "consultant"                         # implementation, ISMS build, roadmaps
+  - "interim_ciso"                       # line responsibility on time
+                                         # use the same values in `role` in projects.yaml; add your own.
+employee_of_third_party: false          # true if a consultancy can place you as employee
+availability_from: "2026-11-01"
+weekly_capacity_days: 3
+existing_commitments:
+  - name: "Mandate A"
+    until: "2027-03-31"
+    days_per_week: 2
+onsite_max_share_pct: 30
+home_base: "Mainz, DE"
+travel_radius_km: 200
+rate:
+  disclose: false                        # false -> "on request" in drafts
+  daily_eur_min: 0
+  daily_eur_target: 0
+languages: ["de: native", "en: fluent"]
+email_signature: |                       # sign-off block for drafts
+  Firstname Lastname
+  Role, Company
+reference_article_url: ""                # appended once in the signature if set
+# Tone, greeting, formality and taboo words live in voice.md (free text), not here.
+
+# Optional. Absent block = no mail access at all. See SECURITY.md section 2 and docs/mail-intake.md.
+# Either a connector:
+# mail_intake:
+#   connector: "microsoft365"     # or "gmail"
+#   allowed_senders:
+#     - "noreply@freelancermap.de"
+#   window_days: 7
+#   output_dir: "./postings"
+# or a local folder your mail client fills by rule (no connector, no token):
+# mail_intake:
+#   folder: "~/Mail/alerts"
+#   allowed_senders:
+#     - "noreply@freelancermap.de"
+#   window_days: 7
+#   output_dir: "./postings"

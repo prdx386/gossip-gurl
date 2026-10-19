@@ -1,0 +1,21 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build .skill (zip with the skill folder at the root)
+        run: |
+          mkdir -p build/gossip-gurl
+          rsync -a --exclude .git --exclude .github --exclude build --exclude '__pycache__' --exclude '*.skill' ./ build/gossip-gurl/
+          cd build && zip -r ../gossip-gurl.skill gossip-gurl
+          unzip -l ../gossip-gurl.skill | head -20
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: gossip-gurl.skill
+          generate_release_notes: true

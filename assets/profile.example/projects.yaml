@@ -1,0 +1,26 @@
+# One entry per project or role. Client may be anonymised ("DAX healthcare group") but sector,
+# role, period and the frameworks you actually worked with must be real: the skill cites these
+# entries as evidence in the matching matrix.
+# `role` is the seat you held and must be one of the values in `roles_offered` (constraints.yaml);
+# the skill selects evidence by this value, so a project you did as auditor is not quoted as
+# implementation experience. `title` is free text for display.
+# `reference_ok: false` means the client is described (sector, role, year), never named, in
+# matrices and drafts.
+- client: "Regional energy utility (KRITIS)"
+  sector: "energy"
+  role: "auditor"
+  title: "Lead auditor, §8a BSIG evidence audit"
+  from: "2024-03"
+  to: "2024-06"
+  frameworks: ["ISO 27001", "B3S Energie", "§8a BSIG"]
+  ot_scope: true
+  reference_ok: false
+- client: "Staffing group, 50k employees"
+  sector: "services"
+  role: "interim_ciso"
+  title: "Deputy Group CISO"
+  from: "2020-01"
+  to: "2024-11"
+  frameworks: ["ISO 27001", "MITRE ATT&CK", "NIST CSF"]
+  ot_scope: false
+  reference_ok: true
