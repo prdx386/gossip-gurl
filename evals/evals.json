@@ -19,8 +19,8 @@
     {
       "id": 3,
       "name": "no-trace-generic-posting",
-      "prompt": "wer steckt dahinter?\n\nIT-Projektleiter (m/w/d) Infrastruktur, 100% remote, Start ab sofort, 6 Monate, für einen Kunden aus dem Mittelstand. Aufgaben: Steuerung von Infrastrukturprojekten, Stakeholdermanagement, Reporting. Anforderungen: 5 Jahre Projektleitung, ITIL, sehr gutes Deutsch. Vermittler: top itservices AG, Ansprechpartner Frau Müller.",
-      "expected_output": "Parses the posting (contact 'Müller' despite the missing colon), attempts the mirror search briefly, finds nothing distinctive, and stops after stage 3 with a short 'no usable trace' report: explains why (no sector, no location, no regulation terms, generic requirements), suggests the two or three questions to ask the recruiter, and does not invent candidates.",
+      "prompt": "wer steckt dahinter?\n\nIT-Projektleiter (m/w/d) Infrastruktur, 100% remote, Start ab sofort, 6 Monate, für einen Kunden aus dem Mittelstand. Aufgaben: Steuerung von Infrastrukturprojekten, Stakeholdermanagement, Reporting. Anforderungen: 5 Jahre Projektleitung, ITIL, sehr gutes Deutsch. Vermittler: top itservices AG, Ansprechpartner Frau Beispiel.",
+      "expected_output": "Parses the posting (contact 'Beispiel' despite the missing colon), attempts the mirror search briefly, finds nothing distinctive, and stops after stage 3 with a short 'no usable trace' report: explains why (no sector, no location, no regulation terms, generic requirements), suggests the two or three questions to ask the recruiter, and does not invent candidates.",
       "files": []
     },
     {

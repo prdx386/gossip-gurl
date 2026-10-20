@@ -35,7 +35,7 @@ Must-have: mind. 10 Jahre SOC/SIEM; tiefes Verständnis Splunk, IBM QRadar oder 
 
 GENERIC = """IT-Projektleiter (m/w/d) Infrastruktur, 100% remote, Start ab sofort, 6 Monate, Mittelstand.
 Anforderungen: 5 Jahre Projektleitung, ITIL, sehr gutes Deutsch. Vermittler: top itservices AG,
-Ansprechpartner Frau Müller. Wir arbeiten gerne im Team und freuen uns auf Ihre reply.
+Ansprechpartner Frau Beispiel. Wir arbeiten gerne im Team und freuen uns auf Ihre reply.
 """
 
 
@@ -74,7 +74,7 @@ class Fields(unittest.TestCase):
     def test_generic_posting(self):
         r = parse(GENERIC)
         self.assertEqual(r["broker"], "top itservices")
-        self.assertEqual(r["contact"], "Müller")
+        self.assertEqual(r["contact"], "Beispiel")
         self.assertEqual(r["duration_months"], 6)
         self.assertEqual(r["remote_share_pct"], 100)
         self.assertTrue(r["constraints"]["german_required"])

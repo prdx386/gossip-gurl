@@ -1,10 +1,15 @@
 # Active certifications only. Expired ones go under `expired` so the skill never lists them as current.
 active:
-  - name: "CISSP"
-    issuer: "ISC2"
-    valid_until: "2028-12-31"
+  - name: "CISM"
+    issuer: "ISACA"
+    valid_until: "2028-06-30"
   - name: "ISO/IEC 27001 Lead Auditor"
-    issuer: "TÜV"
+    issuer: "PECB"
     valid_until: ""
-expired: []
-in_progress: []
+expired:
+  - name: "ITIL Foundation v3"
+    issuer: "AXELOS"
+    valid_until: "2021-12-31"
+in_progress:
+  - name: "ISO/IEC 27001 Lead Implementer"
+    expected: "2027-03"

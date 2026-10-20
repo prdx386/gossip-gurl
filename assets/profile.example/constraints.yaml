@@ -2,21 +2,21 @@
 # This file is read at the start of every run (mail configuration, formal hurdles).
 # cv.md, projects.yaml, certs.yaml and voice.md are read only for a match or a reply draft.
 
-legal_form: "GmbH, sole shareholder-managing director"   # or "freelancer", "employee of consultancy"
+legal_form: "freelancer"                 # or "GmbH (one-person company)", "employee of consultancy"
 roles_offered:                           # the seats you apply from; the skill picks one lens per posting.
   - "auditor"                            # independent assessments, §8a / ISO 27001 audits
   - "consultant"                         # implementation, ISMS build, roadmaps
   - "interim_ciso"                       # line responsibility on time
                                          # use the same values in `role` in projects.yaml; add your own.
 employee_of_third_party: false          # true if a consultancy can place you as employee
-availability_from: "2026-11-01"
+availability_from: "2027-01-01"
 weekly_capacity_days: 3
 existing_commitments:
   - name: "Mandate A"
-    until: "2027-03-31"
+    until: "2027-06-30"
     days_per_week: 2
 onsite_max_share_pct: 30
-home_base: "Mainz, DE"
+home_base: "Hamburg, DE"
 travel_radius_km: 200
 rate:
   disclose: false                        # false -> "on request" in drafts
