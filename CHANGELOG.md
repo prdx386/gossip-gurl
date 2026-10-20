@@ -2,6 +2,10 @@
 
 Keep the frontmatter `description` in SKILL.md in step with every entry here: it is the only thing Claude sees before deciding to use the skill, so a capability that is not in the description does not exist for triggering purposes. Bump `metadata.version` with every entry.
 
+## 0.7.1 (2026-10-20)
+- Example profile neutralised (no longer modelled on the author's CV); placeholder contact names in eval 3 and tests.
+- LICENSE holder is "The gossip-gurl authors" so the packaged .skill carries no personal reference.
+
 ## 0.7 (2026-10-19)
 Revision after an independent review (consistency, correctness, security, legal, parser, triggering, docs).
 - Boundaries that SECURITY.md promised are now instructions in SKILL.md: no profile content or person names in queries (names only to confirm a role), fetch only platform-domain links from alert mails, describe rather than reproduce injected text, no drafts in mail clients, no write/send tools, no edits to the skill's own files at run time (observations go to `notes.md` in the profile folder).

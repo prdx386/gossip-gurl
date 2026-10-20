@@ -3,7 +3,7 @@ name: gossip-gurl
 description: Identify the anonymised end client behind a freelance project or job posting from a staffing broker (freelancermap, freelance.de, GULP, Hays, Experis, Westhouse, Solcom and similar), find decision makers there from public sources, and judge whether and how to apply. Use when the user pastes such a posting or forwards a job-alert mail, with or without a question, or asks who is behind it, for a contact there, or whether to apply; German asks like "wer steckt dahinter", "Endkunde", "Vermittler" count. With a profile folder it also matches the posting requirement by requirement against the user's CV from a chosen role (auditor, consultant, interim), drafts the reply point by point in the posting's order, pre-fills self-rating tables for the user to confirm, dedupes job-alert mails and ranks several postings. "deep" or "gründlich" requests the expensive full investigation. Not for a company the user already named, not for writing postings as employer, not for general CV reviews, never for private individuals.
 license: MIT
 metadata:
-  version: "0.7"
+  version: "0.7.1"
   market: DACH (process is sector-neutral; experience tables are German-speaking market)
 ---
 

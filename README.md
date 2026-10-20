@@ -75,7 +75,7 @@ tests/test_parser.py          parser tests (python3 -I -m unittest discover -s t
 
 ## Status
 
-0.7, early. Built from real cases in the German security consulting market in October 2026, reviewed once by an independent pass for consistency, security and legal framing. Contributions welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
+0.7.1, early. Built from real cases in the German security consulting market in October 2026, reviewed once by an independent pass for consistency, security and legal framing. Contributions welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
